@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "69095839-259e-4300-a9a0-cd392cd6b6d0",
+		"name": "EmployeeAPI_PostmanCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32057938"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9000/api/v1/employees",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjZW1hbGVtcmU4OEBnM21haWwuY29tIiwiaXNzIjoiZW1wbG95ZWVBUEkiLCJleHAiOjE3MDM5MjY1NzksImlhdCI6MTcwMzkxOTM3OX0.sY0GnlVKSS_E0OHLJEEW3bJJDDaZUHL7AH-CJ1XnZRU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"fullName\":\"emre serter\",\"email\":\"erereceme33eremrereeewweeeeale33mre8886@gmail.com\", \"birthDay\": \"1988-07-18\",\r\n\"hobbies\" : [{\"name\": \"futeeeebol\"}]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/v1/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/v1/user/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"cemalemre88@g3mail.com\",\"password\":\"123\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/v1/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"v1",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/v1/user/login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"cemalemre88@g3mail.com\",\"password\":\"123\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/v1/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"v1",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/api/v1/employees/page/0",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjZW1hbGVtcmU4OEBnM21haWwuY29tIiwiaXNzIjoiZW1wbG95ZWVBUEkiLCJleHAiOjE3MDM5ODA5NjcsImlhdCI6MTcwMzk3Mzc2N30.ADEgU-YvQ_4K0RW5NPIkuVD_LVj_vWsGJ1pUBJFLm24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/employees/page/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"page",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/api/v1/employees/ae5d0a19-b521-479e-9e54-d67de0119912",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjZW1hbGVtcmU4OEBnM21haWwuY29tIiwiaXNzIjoiZW1wbG95ZWVBUEkiLCJleHAiOjE3MDM5MjY1NzksImlhdCI6MTcwMzkxOTM3OX0.sY0GnlVKSS_E0OHLJEEW3bJJDDaZUHL7AH-CJ1XnZRU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/employees/c29b3319-f6b2-430d-8fe8-d5e4739421f2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"c29b3319-f6b2-430d-8fe8-d5e4739421f2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/api/v1/employees/ecc6461a-a1de-4a14-876b-da9d4e7fcb91",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjZW1hbGVtcmU4OEBnM21haWwuY29tIiwiaXNzIjoiZW1wbG95ZWVBUEkiLCJleHAiOjE3MDM5MzQyMTYsImlhdCI6MTcwMzkyNzAxNn0.k7AKlCQ_Eu5G9mhgyrJIOXON3XvrC8eqXaEZbaDXmoA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"fullName\":\"CEMAL emre serter\",\"email\":\"RE@gmail.com\", \"birthDay\": \"1988-11-20\",\r\n\"hobbies\" : [{\"name\": \"swimming\"}]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/v1/employees/ecc6461a-a1de-4a14-876b-da9d4e7fcb91",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"ecc6461a-a1de-4a14-876b-da9d4e7fcb91"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/api/v1/employees/ae5d0a19-b521-479e-9e54-d67de0119912",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjZW1hbGVtcmU4OEBnM21haWwuY29tIiwiaXNzIjoiZW1wbG95ZWVBUEkiLCJleHAiOjE3MDM5ODA5NjcsImlhdCI6MTcwMzk3Mzc2N30.ADEgU-YvQ_4K0RW5NPIkuVD_LVj_vWsGJ1pUBJFLm24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/employees/3645b4d1-1392-43c5-9f11-52a36d30563a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"3645b4d1-1392-43c5-9f11-52a36d30563a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
